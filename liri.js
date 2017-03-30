@@ -69,7 +69,9 @@ var spotifyRequest = function(songRequested) {
 
 };
 
+// Create function for searching twitter
 var tweets = function() {
+
 
 	var params = {screen_name: 'brendonjmc'};
 	myKeys.get('statuses/user_timeline', params, function(error, tweets, response){
@@ -80,6 +82,7 @@ var tweets = function() {
 
 };
 
+// Using switch statement to take the user input for the 2nd argument and then the 3rd as well
 switch(process.argv[2]) {
 		
 		case 'movie-this':
